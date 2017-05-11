@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		5236884E161B60B4005993AE /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = F2721ED715C9B20E0040FC3E /* User.h */; };
+		646D0CF9DAE911AA2D3A9B9D /* libPods-Percero.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6C0ABC330A5287F6A9033C /* libPods-Percero.a */; };
 		6A1FBEA216FA304600E9E699 /* PFTargetRelationship.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1FBEA016FA304600E9E699 /* PFTargetRelationship.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A1FBEA316FA304600E9E699 /* PFTargetRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FBEA116FA304600E9E699 /* PFTargetRelationship.m */; };
 		6A1FBEA716FA429A00E9E699 /* PFRelationship.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1FBEA516FA429A00E9E699 /* PFRelationship.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -110,6 +111,7 @@
 		6AFAF6BA1701E2AE0026151D /* RemoveRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAF6B71701E2AE0026151D /* RemoveRequest.m */; };
 		6AFBF825176BC65400DDA9C9 /* PFPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFBF823176BC65400DDA9C9 /* PFPersistence.h */; };
 		6AFBF826176BC65400DDA9C9 /* PFPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFBF824176BC65400DDA9C9 /* PFPersistence.m */; };
+		BC12FC2B6E60B0C78F60B890 /* libPods-PerceroTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A10413A9322AD519E60C5DDE /* libPods-PerceroTests.a */; };
 		EAF93FA516640BB600F581F4 /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF93F8C16640BB500F581F4 /* NSObject+SBJson.h */; };
 		EAF93FA616640BB600F581F4 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF93F8D16640BB500F581F4 /* NSObject+SBJson.m */; };
 		EAF93FA716640BB600F581F4 /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF93F8E16640BB500F581F4 /* SBJson.h */; };
@@ -279,6 +281,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32EC1EEA1EBD8BE900F15368 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		46798A49B9B5E1374BE46207 /* Pods-PerceroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerceroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerceroTests/Pods-PerceroTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E390A6F28ACF69C01177EFE /* Pods-PerceroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerceroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PerceroTests/Pods-PerceroTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A1FBEA016FA304600E9E699 /* PFTargetRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTargetRelationship.h; sourceTree = "<group>"; };
 		6A1FBEA116FA304600E9E699 /* PFTargetRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTargetRelationship.m; sourceTree = "<group>"; };
 		6A1FBEA516FA429A00E9E699 /* PFRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = PFRelationship.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
@@ -346,6 +351,10 @@
 		6AFAF6B71701E2AE0026151D /* RemoveRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoveRequest.m; path = model/RemoveRequest.m; sourceTree = "<group>"; };
 		6AFBF823176BC65400DDA9C9 /* PFPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPersistence.h; sourceTree = "<group>"; };
 		6AFBF824176BC65400DDA9C9 /* PFPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFPersistence.m; sourceTree = "<group>"; };
+		7E6C0ABC330A5287F6A9033C /* libPods-Percero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Percero.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10413A9322AD519E60C5DDE /* libPods-PerceroTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PerceroTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14394CBC4AE153269F9BCFC /* Pods-Percero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Percero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Percero/Pods-Percero.debug.xcconfig"; sourceTree = "<group>"; };
+		A38D5E013575283AE4C140A1 /* Pods-Percero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Percero.release.xcconfig"; path = "Pods/Target Support Files/Pods-Percero/Pods-Percero.release.xcconfig"; sourceTree = "<group>"; };
 		EAF93F8C16640BB500F581F4 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		EAF93F8D16640BB500F581F4 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		EAF93F8E16640BB500F581F4 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -505,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B0264B15C9A495000375CE /* Foundation.framework in Frameworks */,
+				646D0CF9DAE911AA2D3A9B9D /* libPods-Percero.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,12 +525,24 @@
 				F2B0265915C9A495000375CE /* SenTestingKit.framework in Frameworks */,
 				F2B0265C15C9A495000375CE /* Foundation.framework in Frameworks */,
 				F2B0265F15C9A495000375CE /* libPercero.a in Frameworks */,
+				BC12FC2B6E60B0C78F60B890 /* libPods-PerceroTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6247D644124558058E2E0E74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A14394CBC4AE153269F9BCFC /* Pods-Percero.debug.xcconfig */,
+				A38D5E013575283AE4C140A1 /* Pods-Percero.release.xcconfig */,
+				5E390A6F28ACF69C01177EFE /* Pods-PerceroTests.debug.xcconfig */,
+				46798A49B9B5E1374BE46207 /* Pods-PerceroTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2300CA415EE8CC80037A4A4 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
@@ -810,11 +832,13 @@
 		F2B0263C15C9A495000375CE = {
 			isa = PBXGroup;
 			children = (
+				32EC1EEA1EBD8BE900F15368 /* Podfile */,
 				F2B0264C15C9A495000375CE /* Percero */,
 				F2B0266015C9A495000375CE /* client-libraryTests */,
 				F2B0264915C9A495000375CE /* Frameworks */,
 				F2B0264815C9A495000375CE /* Products */,
 				F2300CA415EE8CC80037A4A4 /* Submodules */,
+				6247D644124558058E2E0E74 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -833,6 +857,8 @@
 				F8BFB12A16DEB53A000C9808 /* GTMOAuth2 Stub */,
 				F2B0264A15C9A495000375CE /* Foundation.framework */,
 				F2B0265815C9A495000375CE /* SenTestingKit.framework */,
+				7E6C0ABC330A5287F6A9033C /* libPods-Percero.a */,
+				A10413A9322AD519E60C5DDE /* libPods-PerceroTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1034,10 +1060,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B0266B15C9A495000375CE /* Build configuration list for PBXNativeTarget "Percero" */;
 			buildPhases = (
+				FA4BF511BF2FD5D6E066A802 /* [CP] Check Pods Manifest.lock */,
 				F2B0264315C9A495000375CE /* Sources */,
 				F2B0264415C9A495000375CE /* Frameworks */,
 				F2B0264515C9A495000375CE /* Headers */,
 				F23C67FB15CAEB4600E1E0F0 /* Prepare Framework */,
+				45C366518EFF076B04AA3E45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1052,10 +1080,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B0266E15C9A495000375CE /* Build configuration list for PBXNativeTarget "PerceroTests" */;
 			buildPhases = (
+				90D1F592BFCCEDAF313F5D4F /* [CP] Check Pods Manifest.lock */,
 				F2B0265215C9A495000375CE /* Sources */,
 				F2B0265315C9A495000375CE /* Frameworks */,
 				F2B0265415C9A495000375CE /* Resources */,
 				F2B0265515C9A495000375CE /* ShellScript */,
+				EF56B6727C63F8DE4F894AC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1108,6 +1138,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45C366518EFF076B04AA3E45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Percero/Pods-Percero-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D1F592BFCCEDAF313F5D4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF56B6727C63F8DE4F894AC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PerceroTests/Pods-PerceroTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F20E7E6415CAEE4B00F81C94 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1149,6 +1224,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		FA4BF511BF2FD5D6E066A802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1391,11 +1481,13 @@
 		};
 		F2B0266C15C9A495000375CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A14394CBC4AE153269F9BCFC /* Pods-Percero.debug.xcconfig */;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/client_library.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "client-library/Percero-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Percero;
 				PUBLIC_HEADERS_FOLDER_PATH = "${PROJECT_NAME}Headers";
@@ -1406,6 +1498,7 @@
 		};
 		F2B0266D15C9A495000375CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38D5E013575283AE4C140A1 /* Pods-Percero.release.xcconfig */;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/client_library.dst;
@@ -1421,6 +1514,7 @@
 		};
 		F2B0266F15C9A495000375CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E390A6F28ACF69C01177EFE /* Pods-PerceroTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1436,6 +1530,7 @@
 		};
 		F2B0267015C9A495000375CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46798A49B9B5E1374BE46207 /* Pods-PerceroTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

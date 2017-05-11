@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Organization Name. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface update_arraysTests : SenTestCase
+@interface update_arraysTests : XCTestCase
 
 @end
