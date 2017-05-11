@@ -59,7 +59,7 @@ Percero Obj-C Client Library.
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "6.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
