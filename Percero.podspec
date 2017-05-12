@@ -85,7 +85,7 @@ Percero Obj-C Client Library.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "client-library", "client-library/**/*.{h,m}", "submodules/**/*.{h,m}"
+  s.source_files  = "client-library/**/*.{h,m}", "submodules/**/*.{h,m}"
   #  s.exclude_files = ""
 
   # s.public_header_files = "Classes/**/*.h"
