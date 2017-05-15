@@ -14,7 +14,7 @@
 - (id) init{
     self = [super init];
     if(self){
-        DLog(@"");
+//        DLog(@"");
         theClassId = @"";
         theClassName = @"";
     }

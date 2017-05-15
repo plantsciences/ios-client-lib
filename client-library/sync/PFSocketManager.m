@@ -64,7 +64,7 @@ static PFSocketManager* sharedInstance;
     return syncRequests;
 }
 + (PFSocketManager*) sharedInstance{
-    DLog(@"");
+//    DLog(@"");
     if(!sharedInstance){
         sharedInstance = [[PFSocketManager alloc] init];
     }

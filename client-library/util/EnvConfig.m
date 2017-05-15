@@ -26,7 +26,7 @@ static EnvConfig* sharedInstance;
  * Will return an NSString for the value associated with the propName that is passed in.  If no property is
  * found to match the propName then nil will be returned.
  *
- * @param - NSString* propName -    The name of the property to be retrived from the properties file
+ * @param keyPath -    The name of the property to be retrived from the properties file
  *                                  this can take the form of either 'name' or something like 'env.giggle.name'.
  *                                  Using the '.' syntax can be used as just part of the property name or 
  *                                  can dig deeper into the properties file if it is organized with dictionaries.

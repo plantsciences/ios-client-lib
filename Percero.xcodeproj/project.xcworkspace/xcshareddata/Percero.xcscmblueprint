@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "072BD9E862783305B8E573418A868E5304308CAB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ABB939127996C66F7E852A780552ADEEF03C6B13" : 9223372036854775807,
+    "AA3724F8AD565DB2089C5757B6B76FDB09E52E51" : 9223372036854775807,
+    "43AC92FD7017ECDE18489EEA6AD2FD795E158D7E" : 9223372036854775807,
+    "072BD9E862783305B8E573418A868E5304308CAB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E062C04A-336D-4BE2-8F9D-700AA295544B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ABB939127996C66F7E852A780552ADEEF03C6B13" : "ios.client-library\/submodules\/socket.IO-objc\/submodules\/socket-rocket\/",
+    "AA3724F8AD565DB2089C5757B6B76FDB09E52E51" : "ios.client-library\/submodules\/socket.IO-objc\/submodules\/json-framework\/",
+    "43AC92FD7017ECDE18489EEA6AD2FD795E158D7E" : "ios.client-library\/submodules\/socket.IO-objc\/",
+    "072BD9E862783305B8E573418A868E5304308CAB" : "ios.client-library\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Percero",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Percero.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:plantsciences\/ios-client-lib",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "072BD9E862783305B8E573418A868E5304308CAB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/pkyeck\/socket.IO-objc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43AC92FD7017ECDE18489EEA6AD2FD795E158D7E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stig\/json-framework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AA3724F8AD565DB2089C5757B6B76FDB09E52E51"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/square\/SocketRocket.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABB939127996C66F7E852A780552ADEEF03C6B13"
+    }
+  ]
+}

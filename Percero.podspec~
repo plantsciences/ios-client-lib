@@ -85,12 +85,12 @@ Percero Obj-C Client Library.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "client-library/**/*.{h,m,c}", 'submodules/**/*.{h,m}'
- # s.subspec 'no-arc' do |sp|
-  #  sp.source_files = 
-  #  sp.requires_arc  = false
-  #  # sp.compiler_flags = '-fno-objc-arc'
-  #end
+  s.source_files  = "client-library/**/*.{h,m,c}"
+  s.subspec 'no-arc' do |sp|
+    sp.source_files = 'submodules/**/*.{h,m}'
+    sp.requires_arc  = false
+    # sp.compiler_flags = '-fno-objc-arc'
+  end
   #  s.exclude_files = ""
 
   # s.public_header_files = "Classes/**/*.h"
@@ -134,7 +134,7 @@ Percero Obj-C Client Library.
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
   #s.dependency 'socket.IO', '~> 1.0'
-  s.dependency 'SBJson', '~> 3.1.0'
+  s.dependency 'SBJson5', '~> 3.1.0'
   s.dependency 'SocketRocket', '~> 0.5'
 
 end
