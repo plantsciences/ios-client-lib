@@ -245,7 +245,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32EC1EEA1EBD8BE900F15368 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		326A4D6B1ECA31A800966A93 /* Percero.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Percero.podspec; sourceTree = "<group>"; };
 		6A1FBEA016FA304600E9E699 /* PFTargetRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTargetRelationship.h; sourceTree = "<group>"; };
 		6A1FBEA116FA304600E9E699 /* PFTargetRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTargetRelationship.m; sourceTree = "<group>"; };
 		6A1FBEA516FA429A00E9E699 /* PFRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = PFRelationship.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
@@ -754,7 +754,7 @@
 		F2B0263C15C9A495000375CE = {
 			isa = PBXGroup;
 			children = (
-				32EC1EEA1EBD8BE900F15368 /* Podfile */,
+				326A4D6B1ECA31A800966A93 /* Percero.podspec */,
 				F2B0264C15C9A495000375CE /* Percero */,
 				F2B0266015C9A495000375CE /* client-libraryTests */,
 				F2B0264915C9A495000375CE /* Frameworks */,
