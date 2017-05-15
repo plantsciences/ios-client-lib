@@ -32,11 +32,11 @@
 }
 
 - (NSString *)remoteClassName{
-    DLog(@"This should be implemented by the subclasses");
+//    DLog(@"This should be implemented by the subclasses");
     return nil;
 }
 + (NSString *)remoteClassName{
-    DLog(@"This should be implemented by the subclasses");
+//    DLog(@"This should be implemented by the subclasses");
     return nil;
 }
 - (void)save{
