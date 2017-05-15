@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Percero"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Percero Obj-C Client Lib."
 
   # This description is used to generate tags and improve search results.
@@ -85,7 +85,7 @@ Percero Obj-C Client Library.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "client-library/**/*.{h,m,pch}", "submodules/**/*.{h,m}"
+  s.source_files  = "client-library/**/*.{h,m}", "submodules/**/*.{h,m}"
   #  s.exclude_files = ""
 
   # s.public_header_files = "Classes/**/*.h"
