@@ -85,7 +85,12 @@ Percero Obj-C Client Library.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "client-library/**/*.{h,m}", "submodules/**/*.{h,m}"
+  s.source_files  = "client-library/**/*.{h,m,c}"
+  s.subspec 'no-arc' do |sp|
+    sp.source_files = 'submodules/**/*.{h,m}'
+    sp.requires_arc  = false
+    # sp.compiler_flags = '-fno-objc-arc'
+  end
   #  s.exclude_files = ""
 
   # s.public_header_files = "Classes/**/*.h"
@@ -111,10 +116,10 @@ Percero Obj-C Client Library.
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  # s.framework  = "Foundation"
+  # s.frameworks = "Foundation"
 
-  # s.library   = "iconv"
+  s.library   = "icucore"
   # s.libraries = "iconv", "xml2"
 
 
@@ -124,9 +129,11 @@ Percero Obj-C Client Library.
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  # s.requires_arc = false
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  #s.dependency 'socket.IO', '~> 1.0'
+  s.dependency 'SBJson', '~> 3.1.0'
 
 end
