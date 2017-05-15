@@ -161,7 +161,7 @@
         //    [self removeObserver:self forKeyPath:@"targetObject"];
         
         if ( _sourceKeyPath) {
-            DLog(@"unregister")
+          DLog(@"unregister");
             [self removeObserver:self forKeyPath:self.sourceKeyPath];
             registered = NO;
         } else {
