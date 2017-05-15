@@ -366,12 +366,17 @@ static PFClient* _sharedInstance;
     [[PFSocketManager sharedInstance] sendEvent:@"removeObject" data:request callback:callback];
     
 }
-+ (void) sendPushCWRequestWithEntity:(PFModelObject *) entity fieldName:(NSString *) fieldName parameters:(NSArray *)parameters target:(NSObject*) target method:(SEL) selector{
++ (void) sendPushCWRequestWithEntity:(PFModelObject *) entity
+                           fieldName:(NSString *) fieldName
+                          parameters:(NSArray *)parameters
+                              target:(NSObject*) target
+                              method:(SEL) selector{
     
     PushCWUpdateRequest *request = [[PushCWUpdateRequest alloc] init];
     request.classIDPair.className = entity.remoteClassName;
     request.classIDPair.ID = entity.ID;
     request.fieldName = fieldName;
+    request.params = parameters;
     
     [request setClientId:[PFClient sharedInstance].clientId];
     [request setToken:[PFClient sharedInstance].token];
@@ -393,8 +398,12 @@ static PFClient* _sharedInstance;
 }
 
 + (void) save{
-    [NSKeyedArchiver archiveRootObject:[PFClient sharedInstance] toFile:@"pfclient"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString* path = [paths[0] stringByAppendingPathComponent:@"pfclient"];
+    bool successful = [NSKeyedArchiver archiveRootObject:[PFClient sharedInstance] toFile:path];
+    NSLog(@"[PFClient save] was successful = %i",successful);
 }
+
 
 - (id) initWithCoder:(NSCoder *)aDecoder{
     self = [self init];

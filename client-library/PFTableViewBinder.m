@@ -43,7 +43,7 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
-//    DLog(@"%@",change);
+    DLog(@"%@",change);
     NSInteger kind = [change[NSKeyValueChangeKindKey] intValue];
 
     switch (kind) {
@@ -56,7 +56,7 @@
             break;
             
         default:
-//            DLog(@"Unknown Table KVO");
+            DLog(@"Unknown Table KVO");
             [self.tableView reloadData];
             break;
     }

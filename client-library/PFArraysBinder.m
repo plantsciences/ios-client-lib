@@ -46,7 +46,7 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
-//    DLog(@"\n\nchange:%@", change);
+    DLog(@"\n\nchange:%@", change);
     if (self.delegate) {
         NSString *extendedKeypath = [NSString stringWithFormat:@"%@.%@",[self keyPathLocal], keyPath];
 

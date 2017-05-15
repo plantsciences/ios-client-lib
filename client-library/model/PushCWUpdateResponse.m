@@ -14,6 +14,7 @@
     if(self){
         _classIDPair = [[ClassIDPair alloc] initFromDictionary:[dict objectForKey:@"classIdPair"]];
         _fieldName = [dict objectForKey:@"fieldName"];
+        _params = [dict objectForKey:@"params"];
         _value = [dict objectForKey:@"value"];
     }
     
@@ -27,7 +28,7 @@
     if(!isShell){
         [dict setObject:[_classIDPair toDictionary:isShell]  forKey:@"classIDPair"];
         [dict setObject:_value forKey:@"value"];
-        //[dict setObject:@"" forKey:@"params"];
+        if (_params)[dict setObject:_params forKey:@"params"];
     }
     return dict;
 }

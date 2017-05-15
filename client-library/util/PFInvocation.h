@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface PFInvocation : NSObject{
-    NSObject* target;
+    NSObject* __target;
     SEL selector;
 }
 
-@property(nonatomic, retain) NSObject* target;
+@property(nonatomic, weak) NSObject* target;
 @property(nonatomic) SEL selector;
 
 -(id) initWithTarget:(NSObject*)targetObject method:(SEL)selectorMethod;

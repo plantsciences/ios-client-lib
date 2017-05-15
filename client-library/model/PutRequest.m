@@ -13,9 +13,11 @@
 - (id) init{
     self = [super init];
     if(self){
+        DLog(@"");
         _theObject = nil;
         _putTimestamp = 0;
         _transId = nil;
+        
     }
     
     return self;

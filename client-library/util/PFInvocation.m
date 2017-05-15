@@ -38,7 +38,10 @@
 }
 
 -(void) invokeWithArgument:(NSObject*) obj{
-
+//     NSLog (@"\nJGC target = %@ selector = %@ obj = %@",target,NSStringFromSelector(selector),obj);
+//    if ([NSStringFromSelector(selector) isEqualToString:@"trimQualityTotalInvUnitsPackedCallback:"]) {
+//        NSLog (@"JGC");
+//    }
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [target performSelector:selector withObject:obj];

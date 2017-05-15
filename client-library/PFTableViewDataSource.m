@@ -83,13 +83,13 @@
         //if (!cell.textLabel.text) cell.textLabel.text = @".";
         
     } else {
-//        DLog(@"cell was already queued");
+        DLog(@"cell was already queued");
     }
     
     cell.dataObject = cellObject;
     
     if (!cell) {
-//        DLog(@"cell is null");
+        DLog(@"cell is null");
     }
     return cell;
 }

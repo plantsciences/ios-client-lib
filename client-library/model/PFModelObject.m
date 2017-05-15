@@ -32,11 +32,11 @@
 }
 
 - (NSString *)remoteClassName{
-//    DLog(@"This should be implemented by the subclasses");
+    DLog(@"This should be implemented by the subclasses");
     return nil;
 }
 + (NSString *)remoteClassName{
-//    DLog(@"This should be implemented by the subclasses");
+    DLog(@"This should be implemented by the subclasses");
     return nil;
 }
 - (void)save{
@@ -66,11 +66,40 @@
     
 }
 
-- (void) getChangeWatcherWithFieldName:(NSString *) filedName parameters:(NSArray *) parameters{
+- (void) getChangeWatcherWithFieldName:(NSString *) fieldName parameters:(NSArray *) parameters{
 
-    [PFClient sendPushCWRequestWithEntity:self fieldName:filedName parameters:parameters target:nil method:nil];
+    [PFClient sendPushCWRequestWithEntity:self
+                                fieldName:fieldName
+                               parameters:parameters
+                                   target:nil
+                                   method:nil];
     
 }
+
+- (void) getChangeWatcherWithFieldName:(NSString *) fieldName parameters:(NSArray *) parameters callBackTarget:(NSObject*) target callbackMethod:(SEL) method{
+    
+    [PFClient sendPushCWRequestWithEntity:self
+                                fieldName:fieldName
+                               parameters:parameters
+                                   target:target
+                                   method:method];
+    
+}
+
++(void)requestServerSideDerivedCollectionWithRootObject:(id)rootObject
+      changeWatcherFieldName:(NSString *)changeWatcherFieldName
+                       param:(NSArray*)param
+              callbackTarget:(id)callbackTarget
+            callbackSelector:(SEL)callbackSelector{
+    
+    
+    [rootObject getChangeWatcherWithFieldName:changeWatcherFieldName
+                                   parameters:param
+                               callBackTarget:callbackTarget
+                               callbackMethod:callbackSelector];
+}
+
+
 
 -(ClassIDPair *)classIDPair{
     ClassIDPair *result = [[ClassIDPair alloc] init];
