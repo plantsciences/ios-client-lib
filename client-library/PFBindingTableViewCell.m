@@ -82,11 +82,11 @@
 }
 
 - (void)dealloc{
-    DLog(@"self.anchorObjectBinder:%@",self.anchorObjectBinder);
+//    DLog(@"self.anchorObjectBinder:%@",self.anchorObjectBinder);
     [_binders removeAllObjects];
-    DLog(@"%@ will unregisterKVO", self.class);
+//    DLog(@"%@ will unregisterKVO", self.class);
     [self.anchorObjectBinder unregisterKvo];
-    DLog(@"%@ did unregisterKVO", self.class);
+//    DLog(@"%@ did unregisterKVO", self.class);
 
     
 }

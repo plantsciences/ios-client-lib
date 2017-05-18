@@ -67,7 +67,6 @@ NSString *paramString(NSArray *params);
     return syncRequests;
 }
 + (PFSocketManager*) sharedInstance{
-    DLog(@"");
     if(!sharedInstance){
         sharedInstance = [[PFSocketManager alloc] init];
     }

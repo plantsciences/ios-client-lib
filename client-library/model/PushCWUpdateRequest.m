@@ -12,7 +12,6 @@
 - (id) init{
     self = [super init];
     if(self){
-        DLog(@"");
         _classIDPair = [[ClassIDPair alloc] init];
         _fieldName = nil;
         _params = nil;

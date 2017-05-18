@@ -44,13 +44,17 @@ static PFAuthManager *_sharedInstance = nil;
     [clientViewController presentModalViewController:controller animated:YES];
 }
 
++ (void)loginWithOauthCode:(NSString *) code keyPath:(NSString *)keyPath callbackTarget:(NSObject *)target method:(SEL)selector {
+    [PFClient loginWithOAuthCode:code oauthKey:keyPath callbackTarget:target method:selector];
+}
+
 #pragma mark - PFGitHubOauthDelegate
 
 - (void)authenticationFailed{
     [self.delegate authenticationFailed];
 }
 
-- (void)authenticationSucceededWithCode:(NSString *)code{
+- (void)authenticationSucceededWithCode:(NSString *)code {
 
     [PFClient loginWithOAuthCode:code oauthKey:self.oauthAuthenticationViewController.oauthKey callbackTarget:self method:@selector(didLogin:)];
 }

@@ -24,7 +24,7 @@
 }
 
 - (void) updateTargetObject{
-    DLog(@"updateTarget sourceClass:%@  targetClass:%@",[_sourceObject class], [_targetObject class]);
+//    DLog(@"updateTarget sourceClass:%@  targetClass:%@",[_sourceObject class], [_targetObject class]);
     if (_sourceObject && _sourceKeyPath && _targetObject && _targetKeyPath) {
         
         id sourceValue = [self valueForKeyPath:self.sourceKeyPath];
@@ -37,7 +37,6 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
-    DLog(@"");
     if (registered) {
         if ([keyPath isEqualToString:@"targetObject"]) {
             if (!self.targetObject) {
@@ -138,7 +137,7 @@
                 }
             } else {
                 // source object is an instance
-                DLog(@"register sourceObject class:%@  targetObjectClass:%@", [self.sourceObject class], [self.targetObject class]);
+//                DLog(@"register sourceObject class:%@  targetObjectClass:%@", [self.sourceObject class], [self.targetObject class]);
                 [self addObserver:self forKeyPath:self.sourceKeyPath options:0 context:nil];
                 registered = YES;
 
@@ -161,11 +160,11 @@
         //    [self removeObserver:self forKeyPath:@"targetObject"];
         
         if ( _sourceKeyPath) {
-            DLog(@"unregister")
+//            DLog(@"unregister")
             [self removeObserver:self forKeyPath:self.sourceKeyPath];
             registered = NO;
         } else {
-            DLog(@"fail unregister _sourceObject:%@ _sourceKeypath:%@", _sourceObject, _sourceKeyPath);
+//            DLog(@"fail unregister _sourceObject:%@ _sourceKeypath:%@", _sourceObject, _sourceKeyPath);
         }
 
     }
@@ -173,7 +172,7 @@
 }
 
 - (void)dealloc{
-    DLog(@"");
+//    DLog(@"");
 
     [self unregisterKvo];
 }
