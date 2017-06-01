@@ -20,6 +20,7 @@
 @property(nonatomic, retain) NSString* redirectUri;
 @property(nonatomic, retain) NSString* requestToken;
 @property(nonatomic, retain) NSString* requestSecret;
+@property(nonatomic, retain) NSString* oauthClientId;
 
 @end
 
