@@ -13,6 +13,8 @@
 @interface PFAuthManager () 
 
 @property (nonatomic, strong)  PFOauthViewController *oauthAuthenticationViewController;
+@property (nonatomic, strong) PFInvocation* authCallback;
+
 + (PFAuthManager *)sharedInstance;
 
 @end
@@ -44,8 +46,21 @@ static PFAuthManager *_sharedInstance = nil;
     [clientViewController presentModalViewController:controller animated:YES];
 }
 
+// Static convenience method
 + (void)loginWithOauthCode:(NSString *) code keyPath:(NSString *)keyPath callbackTarget:(NSObject *)target method:(SEL)selector {
-    [PFClient loginWithOAuthCode:code oauthKey:keyPath callbackTarget:target method:selector];
+  [self.sharedInstance loginWithOauthCode:code keyPath:keyPath callbackTarget:target method:selector];
+}
+
+- (void) loginWithOauthCode:(NSString*) code keyPath:(NSString *)keyPath callbackTarget:(NSObject *)target method:(SEL)selector {
+  self.authCallback = [[PFInvocation alloc] initWithTarget:target method:selector];
+  [PFClient loginWithOAuthCode:code oauthKey:keyPath callbackTarget:self method:@selector(loginWithOauthCodeCallback)];
+}
+
+- (void) loginWithOauthCodeCallback {
+  if(self.authCallback) {
+    [self.authCallback invoke];
+    self.authCallback = nil;
+  }
 }
 
 #pragma mark - PFGitHubOauthDelegate

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "PFModelObject.h"
+#import "PFInvocation.h"
 #import "IUserAnchor.h"
 #import "Reachability.h"
 
@@ -42,8 +43,9 @@
 + (Class) iUserAnchorClass;
 + (NSString *) appName;
 + (PFClient*) sharedInstance;
-+ (void) addListenerForAuthEvents:(NSObject*)target method:(SEL)selector;
-+ (bool) loginWithOAuthCode:(NSString*) oauthCode oauthKey:(NSString *) oauthKey callbackTarget:(NSObject*) target method:(SEL) selector;
++ (PFInvocation*) addListenerForAuthEvents:(NSObject*)target method:(SEL)selector;
++ (void) removeListenerForAuthEvents:(PFInvocation*)invocation;
++ (PFInvocation*) loginWithOAuthCode:(NSString*) oauthCode oauthKey:(NSString *) oauthKey callbackTarget:(NSObject*) target method:(SEL) selector;
 + (void) loginSavedSessionWithCallbackTarget:(NSObject*) target method:(SEL) selector;
 + (void) sendFindByExampleRequest:(PFModelObject<IUserAnchor,PFModelObject> *) example target:(NSObject*) target method:(SEL) selector;
 + (void) sendGetAllByNameRequest:(NSString*)className target:(NSObject*) target method:(SEL) selector;

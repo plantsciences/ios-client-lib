@@ -183,19 +183,21 @@ static PFClient* _sharedInstance;
  * start generating activity on the wire.
  */
 - (void) socketReady{
-    
     if (self.currentUser) {
         [self announceAuthenticated:true];
     } else {
         [self getAuthenticatedUser];
     }
-    
-
 }
 
-+ (void) addListenerForAuthEvents:(NSObject*)target method:(SEL)selector{
++ (PFInvocation*) addListenerForAuthEvents:(NSObject*)target method:(SEL)selector{
     PFInvocation* inv = [[PFInvocation alloc] initWithTarget:target method:selector];
     [[PFClient sharedInstance].authListeners addObject:inv];
+    return inv;
+}
+
++ (void) removeListenerForAuthEvents:(PFInvocation*) invocation {
+    [[PFClient sharedInstance].authListeners removeObject:invocation];
 }
 
 
@@ -221,10 +223,11 @@ static PFClient* _sharedInstance;
 /**
  * Service method to make it easier for the client application to issue a login request
  */ 
-+ (bool) loginWithOAuthCode:(NSString *)oauthCode oauthKey:(NSString *)oauthKey callbackTarget:(NSObject *)target method:(SEL)selector{
++ (PFInvocation*) loginWithOAuthCode:(NSString *)oauthCode oauthKey:(NSString *)oauthKey callbackTarget:(NSObject *)target method:(SEL)selector{
+  PFInvocation* invocation;
     [self sharedInstance].lastOauthKey = oauthKey;
     if(target && selector)
-        [PFClient addListenerForAuthEvents:target method:selector];
+        invocation = [PFClient addListenerForAuthEvents:target method:selector];
     
     AuthenticateOAuthCodeRequest *req;
     req = [self newAuthenticateOAuthRequestWithOauthCode:oauthCode];
@@ -233,7 +236,7 @@ static PFClient* _sharedInstance;
 
     [[PFSocketManager sharedInstance] sendEvent:@"authenticateOAuthCode" data:req callback:callback];
     
-    return true;
+    return invocation;
 }
 
 /**
