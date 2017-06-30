@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Percero"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "Percero Obj-C Client Lib."
 
   # This description is used to generate tags and improve search results.
@@ -136,5 +136,6 @@ Percero Obj-C Client Library.
   #s.dependency 'socket.IO', '~> 1.0'
   s.dependency 'SBJson', '~> 3.1.0'
   s.dependency 'SocketRocket', '~> 0.5'
+  s.dependency 'Reachability', '~> 3.2'
 
 end
