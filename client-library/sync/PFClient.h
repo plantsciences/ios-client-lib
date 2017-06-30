@@ -10,7 +10,7 @@
 #import "PFModelObject.h"
 #import "PFInvocation.h"
 #import "IUserAnchor.h"
-#import "Reachability.h"
+//#import <Reachability/Reachability.h>
 
 @class PFSocketManager;
 @class PushCWUpdateRequest;
@@ -27,8 +27,8 @@
     NSString* refreshToken;
     NSMutableSet* authListeners;
 }
-@property (nonatomic, copy) NetworkReachable reachableBlock;
-@property (nonatomic, copy) NetworkUnreachable unReachableBlock;
+//@property (nonatomic, copy) NetworkReachable reachableBlock;
+//@property (nonatomic, copy) NetworkUnreachable unReachableBlock;
 @property (nonatomic, strong) NSString *lastOauthKey;
 @property (nonatomic, readonly) PFSocketManager* syncManager;
 @property (nonatomic, retain) NSString* clientId;

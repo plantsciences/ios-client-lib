@@ -33,7 +33,7 @@
 static PFClient* _sharedInstance;
 
 @interface PFClient ()
-@property (nonatomic, weak) Reachability *reach;
+//@property (nonatomic, weak) Reachability *reach;
 @end
 
 @implementation PFClient
@@ -45,7 +45,7 @@ static PFClient* _sharedInstance;
 - (void) setup{
     [PFPersistence setup];
     authListeners = [[NSMutableSet alloc] init];
-    [self startReachability];
+//    [self startReachability];
     // The PFSocketManager will issue this message when it gets connected
     [PFSocketManager addListenerForConnectEvent:self method:@selector(socketConnected)];
     [PFSocketManager addListenerForReadyEvent:self method:@selector(socketReady)];
@@ -453,31 +453,31 @@ static PFClient* _sharedInstance;
 
 #pragma mark - reachability
 
-- (void)startReachability{
-    // Allocate a reachability object
-    
-    self.reach = [Reachability reachabilityWithHostname:@"www.google.com"];
-    
-    // Set the blocks
-    self.reachableBlock = ^(Reachability*reach)
-    {
-        NSLog(@"REACHABLE!");
-    };
-
-    self.unReachableBlock = ^(Reachability*reach)
-    {
-        NSLog(@"UNREACHABLE!");
-    };
-    
-    // Start the notifier, which will cause the reachability object to retain itself!
-    [self.reach startNotifier];
-}
-
-- (void)setReachableBlock:(NetworkReachable)reachableBlock{
-    self.reach.reachableBlock = reachableBlock;
-}
-
-- (void)setUnReachableBlock:(NetworkUnreachable)unReachableBlock{
-    self.reach.unreachableBlock = unReachableBlock;
-}
+//- (void)startReachability{
+//    // Allocate a reachability object
+//    
+//    self.reach = [Reachability reachabilityWithHostname:@"www.google.com"];
+//    
+//    // Set the blocks
+//    self.reachableBlock = ^(Reachability*reach)
+//    {
+//        NSLog(@"REACHABLE!");
+//    };
+//
+//    self.unReachableBlock = ^(Reachability*reach)
+//    {
+//        NSLog(@"UNREACHABLE!");
+//    };
+//    
+//    // Start the notifier, which will cause the reachability object to retain itself!
+//    [self.reach startNotifier];
+//}
+//
+//- (void)setReachableBlock:(NetworkReachable)reachableBlock{
+//    self.reach.reachableBlock = reachableBlock;
+//}
+//
+//- (void)setUnReachableBlock:(NetworkUnreachable)unReachableBlock{
+//    self.reach.unreachableBlock = unReachableBlock;
+//}
 @end
