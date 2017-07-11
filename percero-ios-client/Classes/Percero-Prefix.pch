@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'client-library' target in the 'client-library' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#define DLog(...) NSLog(@"\n******************************\n%s %d %@\n******************************\n", __PRETTY_FUNCTION__,__LINE__, [NSString stringWithFormat:__VA_ARGS__])
+#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define DLog(...)
+#endif
+

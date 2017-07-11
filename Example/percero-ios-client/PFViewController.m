@@ -7,6 +7,7 @@
 //
 
 #import "PFViewController.h"
+#import "Percero.h"
 
 @interface PFViewController ()
 
@@ -24,6 +25,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction) loginButtonTouched
+{
+  NSLog(@"Login Button Touched");
+  [PFClient loginWithOAuthCode:@"" oauthKey:@"oauth.Google" callbackTarget:self method:@selector(authComplete)];
+}
+
+- (void) authComplete {
+  
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324DDD5D1F149353003588EC /* env.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324DDD5C1F149353003588EC /* env.plist */; };
 		4A406DB0CE39A620C42DCDA8 /* Pods_percero_ios_client_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA03A73D6B28070861F85A8 /* Pods_percero_ios_client_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -40,9 +41,10 @@
 		073FA40B1F1986C1D9835C92 /* Pods-percero-ios-client_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-percero-ios-client_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-percero-ios-client_Tests/Pods-percero-ios-client_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0862CF192EBF35B7DF11F174 /* Pods-percero-ios-client_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-percero-ios-client_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-percero-ios-client_Example/Pods-percero-ios-client_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		11E983ECC64068B5F1A13EF8 /* Pods-percero-ios-client_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-percero-ios-client_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-percero-ios-client_Example/Pods-percero-ios-client_Example.release.xcconfig"; sourceTree = "<group>"; };
-		18088C265582274F88D66323 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		18088C265582274F88D66323 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2536D3F3290A5174E2AA2F20 /* Pods_percero_ios_client_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_percero_ios_client_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1579005B0CE023793C51BE /* percero-ios-client.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "percero-ios-client.podspec"; path = "../percero-ios-client.podspec"; sourceTree = "<group>"; };
+		324DDD5C1F149353003588EC /* env.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = env.plist; sourceTree = "<group>"; };
+		5D1579005B0CE023793C51BE /* percero-ios-client.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "percero-ios-client.podspec"; path = "../percero-ios-client.podspec"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* percero-ios-client_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "percero-ios-client_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +65,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7DAC1C2688D25D17C5439869 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7DAC1C2688D25D17C5439869 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA03A73D6B28070861F85A8 /* Pods_percero_ios_client_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_percero_ios_client_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D580C2A4C9C71F295213723C /* Pods-percero-ios-client_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-percero-ios-client_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-percero-ios-client_Tests/Pods-percero-ios-client_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* percero-ios-client-Prefix.pch */,
+				324DDD5C1F149353003588EC /* env.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				324DDD5D1F149353003588EC /* env.plist in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
