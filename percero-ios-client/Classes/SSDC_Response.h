@@ -6,7 +6,7 @@
 //
 //
 
-#import <Percero/Percero.h>
+#import "Percero.h"
 
 @interface SSDC_Response : NSObject
 @property(nonatomic, retain) ClassIDPair* classIDPair;
