@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'percero-ios-client_Example' do
+  pod 'percero-ios-client', :path => '../'
+
+  target 'percero-ios-client_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
