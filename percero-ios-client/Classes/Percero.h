@@ -20,3 +20,8 @@
 #import "EnvConfig.h"
 #import "IUserAnchor.h"
 #import "IUserRole.h"
+#import "IUserIdentifier.h"
+#import "ModelUtility.h"
+#import "PFSourceRelationship.h"
+#import "PFTargetRelationship.h"
+#import "NSMutableArray+PFUpdate.h"
