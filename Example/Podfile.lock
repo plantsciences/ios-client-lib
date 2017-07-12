@@ -1,6 +1,6 @@
 PODS:
   - Expecta (1.0.5)
-  - percero-ios-client (0.0.11):
+  - percero-ios-client (0.0.13):
     - Reachability (~> 3.2)
     - SBJson (~> 3.1.0)
     - SocketRocket (~> 0.5)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  percero-ios-client: 86d4d53cf17aeae9f261cf4a24a30642b8fe57f1
+  percero-ios-client: c9bf2b664232aa0ae2b233c8f8af5c9832774fc1
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SBJson: fed075209a18590e0c30bfbd0b8d8adf15135257
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
