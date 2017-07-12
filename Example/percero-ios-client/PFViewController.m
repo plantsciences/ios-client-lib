@@ -8,6 +8,10 @@
 
 #import "PFViewController.h"
 #import "Percero.h"
+#import "JPSTest.h"
+#import "JPSTest2.h"
+#import "JPSTest3.h"
+#import "JPSTest4.h"
 
 @interface PFViewController ()
 
